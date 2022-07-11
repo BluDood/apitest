@@ -7,6 +7,6 @@ app.get('/', (req, res) => {
     res.send(new Date(Date.now()))
 })
 
-app.listen(8080, () => {
+app.listen(process.env.port, () => {
     console.log('started')
 })
