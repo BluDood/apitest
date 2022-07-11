@@ -4,7 +4,7 @@ const app = express()
 
 app.get('/', (req, res) => {
     console.log('request')
-    res.send('Hello World!')
+    res.send(new Date(Date.now()))
 })
 
 app.listen(8080, () => {
